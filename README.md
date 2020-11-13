@@ -1,0 +1,1 @@
+This repository is meant for study purposes only, all the code inside is public and developed for basics of programming
