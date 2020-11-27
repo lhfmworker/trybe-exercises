@@ -1,9 +1,9 @@
 let stars=5;
-let square=[];
+let square='*';
 
 for (let i=0;i<stars;i+=1){
-    square.push('*');
+    square += '*';
 }
 for (let i=0;i<stars;i+=1){
-    console.log(square);
+    console.log (square);
 }
