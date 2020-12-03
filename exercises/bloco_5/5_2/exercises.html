@@ -80,6 +80,17 @@
       box2ndSon.appendChild(image);
       image.src = 'https://picsum.photos/200';
       image.nameClass = 'small-image';
+      let list = document.createElement ('ul');
+      box3ndSon.appendChild(list);
+      for (let i=0; i<10 ; i++){
+        list.appendChild(document.createElement('li'));
+        'li'.innerText = i;
+      }
+      for (let i=0; i<3; i++){
+        let headers = document.createElement('h3');
+        boxDad.appendChild(headers);
+      }
+
     </script>
   </body>
 </html>
