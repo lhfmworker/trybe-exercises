@@ -61,6 +61,7 @@
       let header = document.createElement('h1');
       document.body.appendChild(header);
       header.innerText='Exercício 5.2 - JavaScript DOM';
+      header.className = 'title';
       let boxDad = document.createElement('div');
       document.body.appendChild(boxDad);
       boxDad.className = 'main-content';
@@ -79,7 +80,7 @@
       let image = document.createElement ('img');
       box2ndSon.appendChild(image);
       image.src = 'https://picsum.photos/200';
-      image.nameClass = 'small-image';
+      image.className = 'small-image';
       let list = document.createElement ('ul');
       box3ndSon.appendChild(list);
       for (let i=0; i<10 ; i++){
@@ -89,8 +90,8 @@
       for (let i=0; i<3; i++){
         let headers = document.createElement('h3');
         boxDad.appendChild(headers);
+        headers.className = 'description';
       }
-
     </script>
   </body>
 </html>
