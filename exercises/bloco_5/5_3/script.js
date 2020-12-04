@@ -52,6 +52,14 @@ function btnClick (){
     holiDayz[i].style.backgroundColor = 'blue';
     }
   }
+  function colorChangeB ()
+  {
+    let holiDayz = document.querySelectorAll('.holiday');
+    for (let i=0 ; i< holiDayz.length ; i += 1){
+    holiDayz[i].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  }
   btn.addEventListener('click', colorChange);
+  btn.addEventListener('dblclick', colorChangeB);
 }
 btnClick ();
