@@ -14,7 +14,8 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
-  window.onload = function createDezDays (){
+  window.onload = createDezDays, holidays;
+  function createDezDays (){
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let days = document.querySelector('#days');
     for (let i = 0; i< dezDaysList.length; i += 1){
@@ -30,3 +31,15 @@ function createDaysOfTheWeek() {
       days.appendChild(createdDays);
     }
   }
+//Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+//Adicione a este botão a ID "btn-holiday" .
+//Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+function holidays (Feriados){
+  let button = document.createElement('button');
+  let butContain = document.querySelector('.buttons-container');
+  button.id = 'btn-holiday';
+  button.name = 'Feriados';
+  button.innerHTML = 'Feriados';
+  butContain.appendChild(button);
+}
+holidays();
