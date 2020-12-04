@@ -63,3 +63,24 @@ function btnClick (){
   btn.addEventListener('dblclick', colorChangeB);
 }
 btnClick ();
+function sextou (){
+  let btnCont = document.querySelector('.buttons-container');
+  let btnSextou = document.createElement('button');
+  btnSextou.id = 'btn-friday';
+  btnSextou.name = 'sextou';
+  btnSextou.innerHTML = 'Sextou!'
+  btnCont.appendChild(btnSextou);
+}
+sextou ();
+function btnClickFri (){
+  let btn = document.querySelector('#btn-friday');
+  function fridayChange ()
+  {
+    let friDayz = document.querySelectorAll('.friday');
+    for (let i=0 ; i< friDayz.length ; i += 1){
+      friDayz[i].innerText = 'S3XT0U!!!';
+    }
+  }
+  btn.addEventListener('click', fridayChange);
+}
+btnClickFri();
