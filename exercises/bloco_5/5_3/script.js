@@ -23,10 +23,10 @@ function createDaysOfTheWeek() {
       createdDays.innerText = dezDaysList[i];
       createdDays.className = 'day';
       if (dezDaysList[i]==24 | dezDaysList[i]== 25 | dezDaysList[i]== 31){
-        createdDays.className = 'day holiday';
+        createdDays.classList.add('holiday');
       }
       if (dezDaysList[i]==4 | dezDaysList[i]== 11 | dezDaysList[i]== 18 | dezDaysList[i]== 25){
-        createdDays.className = 'day friday';
+        createdDays.classList.add('friday');
       }
       days.appendChild(createdDays);
     }
@@ -43,3 +43,15 @@ function holidays (Feriados){
   butContain.appendChild(button);
 }
 holidays();
+function btnClick (){
+  let btn = document.querySelector('#btn-holiday');
+  function colorChange ()
+  {
+    let holiDayz = document.querySelectorAll('.holiday');
+    for (let i=0 ; i< holiDayz.length ; i += 1){
+    holiDayz[i].style.backgroundColor = 'blue';
+    }
+  }
+  btn.addEventListener('click', colorChange);
+}
+btnClick ();
